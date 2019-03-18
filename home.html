@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<style>
+ 	body{
+ 		background-image: url("back2.jpg");
+ 		background-position: center;
+ 		background-repeat: no-repeat;
+ 		background-attachment: fixed;
+ 		background-size: 1535px 900px;
+ 	}
+	ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4d90fe;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+	input[type=submit]:hover {
+    background-color: #3079ed;
+    border:.1px solid #66b5ff
+}
+	input[type=radio]{ padding: 12px 20px;
+    margin: 8px 0;
+}
+	input[type=text], input[type=password], input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+	div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+	fieldset{
+		width:45%;
+		text-align: left;
+	}
+
+</style>
+</head>
+
+<body>
+<ul>
+  <li><a href="home.html">Sign in</a></li>
+  <li><a href="home.html">Become a Member?</a></li>
+  <li><a href="home.html">FAQs</a></li>
+  <li><a href="home.html">Contact</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="home.html">About</a></li>
+</ul><br>
+<center><img src="coder1.jpg" style="width:150px; height:150px; border-radius: 50%;">
+<h1 style="color:#e36319;"><u>Welcome to The Coder's Club</u></h1></center>
+<form action="submit.html" method="post">
+<center><fieldset>
+<legend align="center"><strong>Application for Membership</strong></legend>
+ <div>   First Name<br>
+    <input type="text" name="firstname" size="44"><br>
+    Last Name<br>
+    <input type="text" name="lastname" size="44"><br>
+	Gender<br>
+    <input type="radio" name="sex" value="male">Male
+    <input type="radio" name="sex" value="female">Female<br>
+	Address<br>
+	<textarea style="width:100%" name="address" rows="5" cols="41"></textarea><br>
+    City<br>
+	<input type="text" name="city"><br>
+	Pincode<br>
+	<input type="text" name="pin"><br>
+	State<br>
+	<select>
+<option value="">Select State.....</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Orissa">Orissa</option>
+<option value="Pondicherry">Pondicherry</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttaranchal">Uttaranchal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bengal">West Bengal</option>
+</select><br>
+	Country<br>
+	<select>
+	<option value="Country">Select Country.....</option>
+	<option value="Country">India</option>
+	<option value="Country">Outside India</option>
+	</select><br>
+	Email<br>
+	<input type="text" name="mail" size="44"><br>
+	Password<br>
+    <input type="password" name="pwd"><br>
+    Phone No.<br>
+    <input type="tel" name="phone"><br>
+	<b>Membership Options</b><br>
+    <input type="radio" name="opts" value="Normal">Normal-5$<br>
+    <input type="radio" name="opts" value="Premium">Premium-10$<br>
+    <input type="radio" name="opts" value="Executive">Executive-20$<br>
+    <b>Check the languages you know</b><br>
+    <input type="checkbox" name="language" value="html">HTML<br>
+    <input type="checkbox" name="language" value="php">PHP<br>
+    <input type="checkbox" name="language" value="c">C<br>
+	<p1>----------------------------------------------------------------------------</p1><br>
+	<input type="checkbox" name="language" value="club">I agree to all the Terms and Conditions of The Coder's Club.<br>
+	<p1>----------------------------------------------------------------------------</p1><br>
+    <input type="submit" value="Submit"></a><br>
+    </div>
+	</fieldset></center>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
